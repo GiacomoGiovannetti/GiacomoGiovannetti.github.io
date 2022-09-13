@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000224;
+    color: #c2c2c4;
+}
+header{
+    background-color:#b35000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+.logo{
+    display:flex;
+    justify-content:flex-start;
+}
+.menu, a{
+    font-family: 'raleway', sans-serif, Helvetica; 
+    text-decoration: none; 
+    color: #c2c2c4;
+    font-size: 1rem;
+}
+.menu{
+    list-style: none;
+}
+.menu li{
+    display:inline-block;
+    padding: 0 10px;
+}
+.links{
+    display:flex; 
+    justify-content: flex-end;
+}
+.nav-link{
+    color: #000224;
+}
+.nav-link:hover{
+    color:#363636;
+}
+.homepage{
+    width: 50vw;
+    height: 100vh;
+}
+.landing-text{
+    font-family: 'Raleway', italic;
+    font-size: 3rem;
+
+}
+
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+  .fa-instagram {
+    background: transparent;
+    color: #c2c2c4;
+  }
+  .fa-linkedin{
+    background: transparent;
+    color: #c2c2c4;
+  }
+  .fa-github{
+    background: transparent;
+    color:#c2c2c4;
+  }
+  .fa-twitter{
+    background: transparent;
+    color:#c2c2c4;
+  }
+
+/*mobile styles*/
+@media only screen and (max-width:400px){
+
+}
+
+/*tablet styles*/
+@media only screen and (min-width:401px) and (max-width: 960px){
+
+}
+/*desktop styles*/
+@media only screen and (min-width:961px){
+    .homepage{
+        border: 1px solid #c2c2c4;
+        height:900px;
+    }
+    .bio{
+        border: 1xp solid #c2c2c4;
+        height:920px;
+    }
+}
+
+/*Style prima del mobile first::
+
+header{
+    background-color: #b35000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%; 
+}
+
+.logo{
+    margin-right: auto ;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu,a{
+    font-family: sans-serif, Helvetica; 
+    font-weight: 400; 
+    text-decoration: none; 
+    color: #c2c2c4;
+    font-size: 1em;
+}
+.menu{
+    list-style: none;
+}
+
+.menu li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.links{
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-link{
+    color: #000224;
+}
+.nav-link:hover{
+    color:#363636;
+}
+*/
