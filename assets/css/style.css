@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000224;
+    color: #c2c2c4;
+    height: auto; 
+    font-family: 'Rokkitt', serif; 
+}
+h2{
+    font-size: 2rem;
+    border-left: solid 1px #c2c2c4;
+    border-right:solid 1px #c2c2c4;
+    display:inline-block;
+    padding: 0.5rem;
+    margin: 1.5rem;
+
+
+}
+/*header + navbar*/
+header{
+    background-color:#b35000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.logo{
+    display:block;
+    width: 50px;
+}
+
+.menu, a{
+    font-family: 'Rokkitt', serif;
+    text-decoration: none; 
+    color: #c2c2c4;
+}
+
+.menu{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+.menu li{
+    display:inline-block;
+    padding: 0 10px;
+}
+
+.links{
+    display:flex; 
+    justify-content: flex-end;
+}
+
+.nav-link{
+    color: #a7a7a7;
+}
+
+.nav-link:hover{
+    color:#363636;
+}
+/*header + navbar end*/
+/*homepage*/
+.homepage{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    justify-content:space-between;
+}
+
+.landing-text{
+    font-family: 'Rokkitt', serif;
+    font-size: 2.5rem;
+    width:95vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+}
+
+h5{
+    font-size:1.7rem;
+}
+/*floating sidebar*/
+.sidebar{ 
+    width: 5vw;
+    display:flex;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content:center;
+    font-size: 1.5rem;
+}
+/*Floating sidebar end*/
+
+.btn{
+    border: 1px solid #b35000;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    margin: 2rem 0 0;
+    transition: background 500ms ease;
+}
+
+.btn:hover{
+    background: #000113;
+}
+/*home page end*/
+/*Portfolio*/
+.portfolio{
+    height: auto;
+    text-align:center;
+}
+.portfolio-element{
+    display:flex;
+    justify-content: center;
+}
+.projects{
+    width: 90vw;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.portfolio-image{
+    display: block;
+    width:100%;
+}
+.project-title{
+    position: relative;
+    bottom: 3rem;
+    right: 0.8rem;
+    font-size: 1.5rem;
+
+}
+.btn-portfolio{
+    border:1px solid #b35000;
+    padding:0.5rem;
+    font-size:1.5rem;
+    font-weight: 600;
+    border-radius: 50px;
+    margin: 1.3rem 0 1.5rem;
+    transition: background 500ms ease;
+    position:relative;
+    bottom: 4.8rem;
+    left: 1rem;
+}
+.btn-portfolio:hover{
+    background:#000113;
+}
+/*Portofolio end*/
+
+/*about me*/
+.bio{
+    height: 50vh;
+    text-align:center; 
+}
+.about-me{
+    text-align: left;
+    font-size: 1.2rem;
+}
+/*about me end*/
+/*contact info*/
+.contact-info-container{
+    height:50vh;
+    text-align: center;
+}
+.contact-info{
+    display:inline-block;
+    font-size: 1.2rem;
+    margin:0.5rem;
+    border-bottom: 1px solid #c2c2c4;
+}
+.contact-info-list-container{
+    text-align:left;
+}
+/*contect info end*/
+/*footer*/
+footer{
+    background-color: #000113;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    font-size:1.2rem;
+
+}
+.logo-footer{
+    display: flex; 
+    width:50px;
+    align-items:center;
+}
+
+/*footer end*/
+/*icons*/
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+  .fa-instagram {
+    background: transparent;
+    color: #c2c2c4;
+  }
+  .fa-linkedin{
+    background: transparent;
+    color: #c2c2c4;
+  }
+  .fa-github{
+    background: transparent;
+    color:#c2c2c4;
+  }
+  .fa-twitter{
+    background: transparent;
+    color:#c2c2c4;
+  }
+  .fa-html5{
+    color:#c2c2c4;
+  }
+  .fa.css3{
+    color:#c2c2c4;
+  }
+  .fa-arrow-circle-up{
+    color:#c2c2c4;
+  }
+  /*icons end*/
+
+/*mobile styles*/
+@media only screen and (max-width:400px){
+
+}
+
+/*tablet styles*/
+@media only screen and (min-width:401px) and (max-width: 960px){
+
+}
+/*desktop styles*/
+@media only screen and (min-width:961px){
+    .homepage{
+        border: 1px solid #c2c2c4;
+        height:900px;
+    }
+    .bio{
+        border: 1xp solid #c2c2c4;
+        height:920px;
+    }
+}
+
+/*Style prima del mobile first::
+
+header{
+    background-color: #b35000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%; 
+}
+
+.logo{
+    margin-right: auto ;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu,a{
+    font-family: sans-serif, Helvetica; 
+    font-weight: 400; 
+    text-decoration: none; 
+    color: #c2c2c4;
+    font-size: 1em;
+}
+.menu{
+    list-style: none;
+}
+
+.menu li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.links{
+    display: flex;
+    justify-content: flex-end;
+}
+.nav-link{
+    color: #000224;
+}
+.nav-link:hover{
+    color:#363636;
+}
+*/
