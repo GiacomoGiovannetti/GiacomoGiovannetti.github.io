@@ -8,24 +8,25 @@
 }
 
 body{
-    background-color: #000224;
-    color: #c2c2c4;
+    background-color: #749bab;
+    color: #1c292e;
     height: auto; 
     font-family: 'Rokkitt', serif; 
 }
 h2{
     font-size: 2rem;
-    border-left: solid 1px #c2c2c4;
-    border-right:solid 1px #c2c2c4;
+    border-left: solid 1px #1c292e;
+    border-right:solid 1px #1c292e;
     display:inline-block;
     padding: 0.5rem;
     margin: 1.5rem;
+    color:#1c292e
 
 
 }
 /*header + navbar*/
 header{
-    background-color:#b35000;
+    background-color:#39697d;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,7 +41,7 @@ header{
 .menu, a{
     font-family: 'Rokkitt', serif;
     text-decoration: none; 
-    color: #c2c2c4;
+    color: #1c292e;
 }
 
 .menu{
@@ -59,11 +60,12 @@ header{
 }
 
 .nav-link{
-    color: #a7a7a7;
+    color: #1c292e;
+    font-weight: 700;
 }
 
 .nav-link:hover{
-    color:#363636;
+    color:#11252e;
 }
 /*header + navbar end*/
 /*homepage*/
@@ -84,12 +86,13 @@ header{
     justify-content: center;
     align-items: flex-start;
     text-align: left;
+    padding-left: 1rem;
 }
 
 h5{
     font-size:1.7rem;
 }
-/*floating sidebar*/
+/*social sidebar*/
 .sidebar{ 
     width: 5vw;
     display:flex;
@@ -97,11 +100,12 @@ h5{
     align-items:flex-end;
     justify-content:center;
     font-size: 1.5rem;
+    padding-right:0.5rem;
 }
-/*Floating sidebar end*/
+/*Social sidebar end*/
 
 .btn{
-    border: 1px solid #b35000;
+    border: 2px solid #39697d;
     padding: 0.5rem;
     font-size: 1.5rem;
     border-radius: 50px;
@@ -110,13 +114,14 @@ h5{
 }
 
 .btn:hover{
-    background: #000113;
+    background: #11252e;
 }
 /*home page end*/
 /*Portfolio*/
 .portfolio{
     height: auto;
     text-align:center;
+    color: #c2c2c4;
 }
 .portfolio-element{
     display:flex;
@@ -140,19 +145,20 @@ h5{
 
 }
 .btn-portfolio{
-    border:1px solid #b35000;
+    border:2px solid #39697d;
+    color: #c2c2c4;
     padding:0.5rem;
-    font-size:1.5rem;
+    font-size:1.1rem;
     font-weight: 600;
     border-radius: 50px;
     margin: 1.3rem 0 1.5rem;
     transition: background 500ms ease;
     position:relative;
-    bottom: 4.8rem;
-    left: 1rem;
+    bottom: 4.4rem;
+    left: 0.8rem;
 }
 .btn-portfolio:hover{
-    background:#000113;
+    background:#11252e;
 }
 /*Portofolio end*/
 
@@ -160,10 +166,17 @@ h5{
 .bio{
     height: 50vh;
     text-align:center; 
+    margin-bottom: 1rem;
 }
 .about-me{
     text-align: left;
     font-size: 1.2rem;
+}
+.skill{
+    font-size: 2rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 /*about me end*/
 /*contact info*/
@@ -175,7 +188,7 @@ h5{
     display:inline-block;
     font-size: 1.2rem;
     margin:0.5rem;
-    border-bottom: 1px solid #c2c2c4;
+    border-bottom: 1px solid #1c292e;
 }
 .contact-info-list-container{
     text-align:left;
@@ -183,18 +196,25 @@ h5{
 /*contect info end*/
 /*footer*/
 footer{
-    background-color: #000113;
-    height: 25vh;
+    background-color: #11252e;
+    height: 27vh;
     display: flex;
     flex-direction: column;
     align-items:center;
     font-size:1.2rem;
+    color:#c2c2c4
 
 }
 .logo-footer{
     display: flex; 
     width:50px;
     align-items:center;
+    margin: 0.5rem;
+}
+.socialfooter{
+    color:#c2c2c4;
+    margin: 0.8rem;
+
 }
 
 /*footer end*/
@@ -210,25 +230,25 @@ footer{
 
   .fa-instagram {
     background: transparent;
-    color: #c2c2c4;
+    color: #1c292e;
   }
   .fa-linkedin{
     background: transparent;
-    color: #c2c2c4;
+    color: #1c292e;
   }
   .fa-github{
     background: transparent;
-    color:#c2c2c4;
+    color:#1c292e;
   }
   .fa-twitter{
     background: transparent;
-    color:#c2c2c4;
+    color:#1c292e;
   }
   .fa-html5{
-    color:#c2c2c4;
+    color:#1c292e;
   }
   .fa.css3{
-    color:#c2c2c4;
+    color:#1c292e;
   }
   .fa-arrow-circle-up{
     color:#c2c2c4;
@@ -255,47 +275,3 @@ footer{
         height:920px;
     }
 }
-
-/*Style prima del mobile first::
-
-header{
-    background-color: #b35000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%; 
-}
-
-.logo{
-    margin-right: auto ;
-    display: flex;
-    justify-content: flex-start;
-}
-
-.menu,a{
-    font-family: sans-serif, Helvetica; 
-    font-weight: 400; 
-    text-decoration: none; 
-    color: #c2c2c4;
-    font-size: 1em;
-}
-.menu{
-    list-style: none;
-}
-
-.menu li{
-    display: inline-block;
-    padding: 0 20px;
-}
-
-.links{
-    display: flex;
-    justify-content: flex-end;
-}
-.nav-link{
-    color: #000224;
-}
-.nav-link:hover{
-    color:#363636;
-}
-*/
