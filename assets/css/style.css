@@ -1,18 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Rokkitt&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
-    background-color: #749bab;
+    background: #c2c2c4;
     color: #1c292e;
     height: auto; 
     font-family: 'Rokkitt', serif; 
 }
+
+.page{
+    background-color: #749bab;
+}
+
 h2{
     font-size: 2rem;
     border-left: solid 1px #1c292e;
@@ -20,10 +28,23 @@ h2{
     display:inline-block;
     padding: 0.5rem;
     margin: 1.5rem;
-    color:#1c292e
-
-
+    color:#1c292e;
 }
+/*scroll bar*/
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-track{
+    background: #c2c2c4;
+}
+::-webkit-scrollbar-thumb{
+    background:#132a35;
+    border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb:hover{
+    background:#0e1e25;
+}
+/*scroll bar end*/
 /*header + navbar*/
 header{
     background-color:#39697d;
@@ -36,6 +57,7 @@ header{
 .logo{
     display:block;
     width: 50px;
+    border-radius: 2%;
 }
 
 .menu, a{
@@ -92,7 +114,6 @@ header{
 .p-landing{
     font-size: 1.7rem;
     font-weight: 600;
-
 }
 /*social sidebar*/
 .sidebar{ 
@@ -116,7 +137,8 @@ header{
 }
 
 .btn:hover{
-    background: #11252e;
+    background: #1c292e;
+    color:#c2c2c4;
 }
 /*home page end*/
 /*Portfolio*/
@@ -125,20 +147,25 @@ header{
     text-align:center;
     color: #c2c2c4;
 }
+
 .portfolio-element{
     display:flex;
     justify-content: center;
 }
+
 .projects{
     width: 90%;
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .portfolio-image{
     display: block;
     width:100%;
+    border-radius: 2%;
 }
+
 .project-title{
     position: relative;
     bottom: 3rem;
@@ -146,8 +173,9 @@ header{
     font-size: 1.5rem;
 
 }
+
 .btn-portfolio{
-    border:2px solid #39697d;
+    border:2px solid #1c292e;
     color: #c2c2c4;
     padding:0.5rem;
     font-size:1.1rem;
@@ -159,8 +187,9 @@ header{
     bottom: 4.4rem;
     left: 0.8rem;
 }
+
 .btn-portfolio:hover{
-    background:#11252e;
+    background:#1c292e;
 }
 /*Portofolio end*/
 
@@ -170,10 +199,13 @@ header{
     text-align:center; 
     margin-bottom: 1rem;
 }
+
 .about-me{
     text-align: left;
     font-size: 1.2rem;
+    margin: 0.5rem;
 }
+
 .skill{
     font-size: 2rem;
     display:flex;
@@ -186,12 +218,14 @@ header{
     height:50vh;
     text-align: center;
 }
+
 .contact-info{
     display:inline-block;
     font-size: 1.2rem;
     margin:0.5rem;
     border-bottom: 1px solid #1c292e;
 }
+
 .contact-info-list-container{
     text-align:left;
 }
@@ -205,14 +239,16 @@ footer{
     align-items:center;
     font-size:1.2rem;
     color:#c2c2c4
-
 }
+
 .logo-footer{
     display: flex; 
     width:50px;
     align-items:center;
     margin: 0.5rem;
+    border-radius: 2%;
 }
+
 .socialfooter{
     color:#c2c2c4;
     margin: 0.8rem;
@@ -234,54 +270,57 @@ footer{
     background: transparent;
     color: #1c292e;
   }
+
   .fa-linkedin{
     background: transparent;
     color: #1c292e;
   }
+
   .fa-github{
     background: transparent;
     color:#1c292e;
   }
+
   .fa-twitter{
     background: transparent;
     color:#1c292e;
   }
+
   .fa-html5{
     color:#1c292e;
   }
+
   .fa.css3{
     color:#1c292e;
   }
+
   .fa-arrow-circle-up{
     color:#c2c2c4;
   }
   /*icons end*/
-
-/*mobile styles*/
-@media only screen and (max-width:499px){
-
-}
 
 /*tablet styles*/
 @media only screen and (min-width:500px) and (max-width: 1060px){
     html{
         font-size: 24px;
     }
+
     h2{
-        border-left: solid 2px #1c292e;
-        border-right: solid 2px #1c292e;
+        border-left-width: 2px;
+        border-right-width: 2px;
     }
     /*header + navbar */
     .logo{
         width: 75px;
     }
+
     .menu , .menu-el{
         padding: 0 20px;
     }
     /*header + navbar end*/
     /*homepage*/
     .btn{
-        border: 3px solid #39697d;
+        border-width: 3px;
     }
     /*homepage end*/
     /*portfolio*/
@@ -289,17 +328,20 @@ footer{
         display:flex;
         flex-wrap: wrap;
     }
+
     .portfolio-element{
         display:flex;
         width: 50%;
     }
+
     .project-title{
         font-size: 1.2rem;
         right: 0.1rem;
         bottom: 2.4rem;
     }
+
     .btn-portfolio{
-        border: 2px solid #39697d;
+        border-width: 2px;
         bottom: 3.6rem;
         left: 0.5rem;
         font-size: 0.8rem;
@@ -307,11 +349,10 @@ footer{
     }
     /*portfolio end*/
     /*about me*/
-    
     /*about me end*/
     /*contact-info*/
     .contact-info{
-        border-bottom: 2px solid #1c292e;
+        border-bottom-width: 2px;
     }
     /*contact-info end*/
     /*footer*/
@@ -331,25 +372,71 @@ footer{
 }
 /*desktop styles*/
 @media only screen and (min-width:1061px){
+    html{
+        font-size: 21px;
+    }
+    .page{
+        width: 1060px;
+        margin: 0 auto;
+    }
+    h2{
+        border-left-width: 2px;
+        border-right-width: 2px;
+    }
+    
     /*header + navbar */
-
     /*header + navbar end*/
     /*homepage*/
-
+ .btn{
+    border-width: 3px;
+ }
     /*homepage end*/
     /*portfolio*/
+    .portfolio-list{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
+    .portfolio-element{
+        display: flex;
+        width: 33%;
+    }
+
+    .project-title{
+        bottom: 2.5rem;
+        right: 0rem;
+
+    }
+
+    .btn-portfolio{
+        border-width: 2px;
+        font-size: 0.7rem;
+        padding: 0.3rem;
+        bottom: 3.4rem;
+        left: 0.2rem;
+    }
     /*portfolio end*/
     /*about me*/
-
     /*about me end*/
     /*contact-info*/
-
+    .contact-info-list{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contact-info{
+        border-bottom-width: 2px;
+    }
     /*contact-info end*/
     /*footer*/
-    
     /*footer end*/
     /*icons*/
-
+    .fa{
+        padding: 26px;
+        font-size: 39px;
+        width: 65px;
+        margin: 5px 2px;
+    }
     /*icons end*/
 }
