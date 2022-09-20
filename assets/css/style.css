@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rokkitt&display=swap');
+:root{
+    --lightgray: #c2c2c4;
+    --darkblue: #1c292e;
+    --lightblue: #749bab;
+
+}
 
 *{
     margin: 0;
@@ -11,38 +17,38 @@ html{
 }
 
 body{
-    background: #c2c2c4;
-    color: #1c292e;
+    background: var(--lightgray);
+    color: var(--darkblue);
     height: auto; 
     font-family: 'Rokkitt', serif; 
 }
 
 .page{
-    background-color: #749bab;
+    background-color: var(--lightblue);
 }
 
 h2{
     font-size: 2rem;
-    border-left: solid 1px #1c292e;
-    border-right:solid 1px #1c292e;
+    border-left: solid 1px var(--darkblue);
+    border-right:solid 1px var(--darkblue);
     display:inline-block;
     padding: 0.5rem;
     margin: 1.5rem;
-    color:#1c292e;
+    color:var(--darkblue);
 }
 /*scroll bar*/
 ::-webkit-scrollbar{
     width: 7px;
 }
 ::-webkit-scrollbar-track{
-    background: #c2c2c4;
+    background: var(--lightgray);
 }
 ::-webkit-scrollbar-thumb{
-    background:#132a35;
+    background:#39697d;
     border-radius: 1rem;
 }
 ::-webkit-scrollbar-thumb:hover{
-    background:#0e1e25;
+    background:var(--darkblue);
 }
 /*scroll bar end*/
 /*header + navbar*/
@@ -63,7 +69,7 @@ header{
 .menu, a{
     font-family: 'Rokkitt', serif;
     text-decoration: none; 
-    color: #1c292e;
+    color: var(--darkblue);
 }
 
 .menu{
@@ -82,7 +88,7 @@ header{
 }
 
 .nav-link{
-    color: #1c292e;
+    color: var(--darkblue);
     font-weight: 700;
 }
 
@@ -137,15 +143,15 @@ header{
 }
 
 .btn:hover{
-    background: #1c292e;
-    color:#c2c2c4;
+    background: var(--darkblue);
+    color:var(--lightgray);
 }
 /*home page end*/
 /*Portfolio*/
 .portfolio{
     height: auto;
     text-align:center;
-    color: #c2c2c4;
+    color: var(--lightgray);
 }
 
 .portfolio-element{
@@ -175,8 +181,8 @@ header{
 }
 
 .btn-portfolio{
-    border:2px solid #1c292e;
-    color: #c2c2c4;
+    border:2px solid var(--darkblue);
+    color: var(--lightgray);
     padding:0.5rem;
     font-size:1.1rem;
     font-weight: 600;
@@ -189,7 +195,7 @@ header{
 }
 
 .btn-portfolio:hover{
-    background:#1c292e;
+    background:var(--darkblue);
 }
 /*Portofolio end*/
 
@@ -223,7 +229,7 @@ header{
     display:inline-block;
     font-size: 1.2rem;
     margin:0.5rem;
-    border-bottom: 1px solid #1c292e;
+    border-bottom: 1px solid var(--darkblue);
 }
 
 .contact-info-list-container{
@@ -238,7 +244,7 @@ footer{
     flex-direction: column;
     align-items:center;
     font-size:1.2rem;
-    color:#c2c2c4
+    color:var(--lightgray);
 }
 
 .logo-footer{
@@ -250,7 +256,7 @@ footer{
 }
 
 .socialfooter{
-    color:#c2c2c4;
+    color:var(--lightgray);
     margin: 0.8rem;
 
 }
@@ -268,34 +274,34 @@ footer{
 
   .fa-instagram {
     background: transparent;
-    color: #1c292e;
+    color: var(--darkblue);
   }
 
   .fa-linkedin{
     background: transparent;
-    color: #1c292e;
+    color: var(--darkblue);
   }
 
   .fa-github{
     background: transparent;
-    color:#1c292e;
+    color:var(--darkblue);
   }
 
   .fa-twitter{
     background: transparent;
-    color:#1c292e;
+    color:var(--darkblue);
   }
 
   .fa-html5{
-    color:#1c292e;
+    color:var(--darkblue);
   }
 
   .fa.css3{
-    color:#1c292e;
+    color:var(--darkblue);
   }
 
   .fa-arrow-circle-up{
-    color:#c2c2c4;
+    color:var(--lightgray);
   }
   /*icons end*/
 
@@ -383,7 +389,6 @@ footer{
         border-left-width: 2px;
         border-right-width: 2px;
     }
-    
     /*header + navbar */
     /*header + navbar end*/
     /*homepage*/
