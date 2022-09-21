@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt&display=swap');
+:root{
+    --lightgray: #c2c2c4;
+    --darkblue: #1c292e;
+    --lightblue: #749bab;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: var(--lightgray);
+    color: var(--darkblue);
+    height: auto; 
+    font-family: 'Rokkitt', serif; 
+}
+
+.page{
+    background-color: var(--lightblue);
+}
+
+h2{
+    font-size: 2rem;
+    border-left: solid 1px var(--darkblue);
+    border-right:solid 1px var(--darkblue);
+    display:inline-block;
+    padding: 0.5rem;
+    margin: 1.5rem;
+    color:var(--darkblue);
+}
+/*scroll bar*/
+::-webkit-scrollbar{
+    width: 7px;
+}
+::-webkit-scrollbar-track{
+    background: var(--lightgray);
+}
+::-webkit-scrollbar-thumb{
+    background:var(--darkblue);
+    border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb:hover{
+    background:#11252e;
+}
+/*scroll bar end*/
+/*header + navbar*/
+header{
+    background-color:#39697d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.logo{
+    display:block;
+    width: 50px;
+    border-radius: 2%;
+}
+
+.menu, a{
+    font-family: 'Rokkitt', serif;
+    text-decoration: none; 
+    color: var(--darkblue);
+}
+
+.menu{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+.menu, .menu-el{
+    display:inline-block;
+    padding: 0 10px;
+}
+
+.links{
+    display:flex; 
+    justify-content: flex-end;
+}
+
+.nav-link{
+    color: var(--darkblue);
+    font-weight: 700;
+}
+
+.nav-link:hover{
+    color:#11252e;
+}
+/*header + navbar end*/
+/*homepage*/
+.homepage{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    justify-content:space-between;
+}
+
+.landing-text{
+    font-family: 'Rokkitt', serif;
+    font-size: 2.5rem;
+    width:95vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.p-landing{
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+/*social sidebar*/
+.sidebar{ 
+    width: 5vw;
+    display:flex;
+    flex-direction: column;
+    align-items:flex-end;
+    justify-content:center;
+    font-size: 1.5rem;
+    padding-right:0.5rem;
+}
+/*Social sidebar end*/
+
+.btn{
+    border: 2px solid #39697d;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    margin: 2rem 0 0;
+    transition: background 500ms ease;
+}
+
+.btn:hover{
+    background: var(--darkblue);
+    color:var(--lightgray);
+}
+/*home page end*/
+/*Portfolio*/
+.portfolio{
+    height: auto;
+    text-align:center;
+    color: var(--lightgray);
+}
+
+.portfolio-element{
+    display:flex;
+    justify-content: center;
+}
+
+.projects{
+    width: 90%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.portfolio-image{
+    display: block;
+    width:100%;
+    border-radius: 2%;
+}
+
+.project-title{
+    position: relative;
+    bottom: 3rem;
+    right: 0.8rem;
+    font-size: 1.5rem;
+
+}
+
+.btn-portfolio{
+    border:2px solid var(--darkblue);
+    color: var(--lightgray);
+    padding:0.5rem;
+    font-size:1.1rem;
+    font-weight: 600;
+    border-radius: 50px;
+    margin: 1.3rem 0 1.5rem;
+    transition: background 500ms ease;
+    position:relative;
+    bottom: 4.4rem;
+    left: 0.8rem;
+}
+
+.btn-portfolio:hover{
+    background:var(--darkblue);
+}
+/*Portofolio end*/
+
+/*about me*/
+.bio{
+    height: auto;
+    text-align:center; 
+    margin-bottom: 1rem;
+}
+
+.about-me{
+    text-align: left;
+    font-size: 1.2rem;
+    margin: 0.5rem;
+}
+.link-bio{
+    text-decoration: underline;
+}
+
+.skill{
+    font-size: 2rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+/*about me end*/
+/*contact info*/
+.contact-info-container{
+    height:50vh;
+    text-align: center;
+}
+
+.contact-info{
+    display:inline-block;
+    font-size: 1.2rem;
+    margin:0.5rem;
+    border-bottom: 1px solid var(--darkblue);
+}
+
+.contact-info-list-container{
+    text-align:left;
+}
+/*contact info end*/
+/*footer*/
+footer{
+    background-color: #11252e;
+    height: 27vh;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    font-size:1.2rem;
+    color:var(--lightgray);
+}
+
+.logo-footer{
+    display: flex; 
+    width:50px;
+    align-items:center;
+    margin: 0.5rem;
+    border-radius: 2%;
+}
+
+.socialfooter{
+    color:var(--lightgray);
+    margin: 0.8rem;
+
+}
+
+/*footer end*/
+/*icons*/
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+  .fa-instagram {
+    background: transparent;
+    color: var(--darkblue);
+  }
+
+  .fa-linkedin{
+    background: transparent;
+    color: var(--darkblue);
+  }
+
+  .fa-github{
+    background: transparent;
+    color:var(--darkblue);
+  }
+
+  .fa-twitter{
+    background: transparent;
+    color:var(--darkblue);
+  }
+
+  .fa-html5{
+    color:var(--darkblue);
+  }
+
+  .fa.css3{
+    color:var(--darkblue);
+  }
+
+  .fa-arrow-circle-up{
+    color:var(--lightgray);
+  }
+  /*icons end*/
+
+/*tablet styles*/
+@media only screen and (min-width:500px) and (max-width: 1060px){
+    html{
+        font-size: 24px;
+    }
+
+    h2{
+        border-left-width: 2px;
+        border-right-width: 2px;
+    }
+    /*header + navbar */
+    .logo{
+        width: 75px;
+    }
+
+    .menu , .menu-el{
+        padding: 0 20px;
+    }
+    /*header + navbar end*/
+    /*homepage*/
+    .btn{
+        border-width: 3px;
+    }
+    /*homepage end*/
+    /*portfolio*/
+    .portfolio-list{
+        display:flex;
+        flex-wrap: wrap;
+    }
+
+    .portfolio-element{
+        display:flex;
+        width: 50%;
+    }
+
+    .project-title{
+        font-size: 1.2rem;
+        right: 0.1rem;
+        bottom: 2.4rem;
+    }
+
+    .btn-portfolio{
+        border-width: 2px;
+        bottom: 3.6rem;
+        left: 0.5rem;
+        font-size: 0.8rem;
+        padding: 0.3rem;
+    }
+    /*portfolio end*/
+    /*about me*/
+    /*about me end*/
+    /*contact-info*/
+    .contact-info-list{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contact-info{
+        border-bottom-width: 2px;
+    }
+    /*contact-info end*/
+    /*footer*/
+    .logo-footer{
+        width: 75px;
+    }
+    /*footer end*/
+    /*icons*/
+    .fa{
+        padding: 30px;
+        font-size: 45px;
+        width: 75px;
+        margin: 7.5px 3px;
+    }
+    /*icons end*/
+
+}
+/*desktop styles*/
+@media only screen and (min-width:1061px){
+    html{
+        font-size: 21px;
+    }
+    h2{
+        border-left-width: 2px;
+        border-right-width: 2px;
+    }
+    /*header + navbar */
+    /*header + navbar end*/
+    /*homepage*/
+ .btn{
+    border-width: 3px;
+ }
+    /*homepage end*/
+    /*portfolio*/
+    .portfolio-list{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .portfolio-element{
+        display: flex;
+        width: 33%;
+    }
+
+    .project-title{
+        bottom: 2.5rem;
+        right: 0rem;
+
+    }
+
+    .btn-portfolio{
+        border-width: 2px;
+        font-size: 0.7rem;
+        padding: 0.3rem;
+        bottom: 3.4rem;
+        left: 0.2rem;
+    }
+    /*portfolio end*/
+    /*about me*/
+    /*about me end*/
+    /*contact-info*/
+    .contact-info-list{
+        display:flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .contact-info{
+        border-bottom-width: 2px;
+    }
+    /*contact-info end*/
+    /*footer*/
+    /*footer end*/
+    /*icons*/
+    .fa{
+        padding: 26px;
+        font-size: 39px;
+        width: 65px;
+        margin: 5px 2px;
+    }
+    /*icons end*/
+}
