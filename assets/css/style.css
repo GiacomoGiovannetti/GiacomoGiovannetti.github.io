@@ -201,7 +201,7 @@ header{
 
 /*about me*/
 .bio{
-    height: 50vh;
+    height: auto;
     text-align:center; 
     margin-bottom: 1rem;
 }
@@ -210,6 +210,9 @@ header{
     text-align: left;
     font-size: 1.2rem;
     margin: 0.5rem;
+}
+.link-bio{
+    text-decoration: underline;
 }
 
 .skill{
@@ -357,6 +360,11 @@ footer{
     /*about me*/
     /*about me end*/
     /*contact-info*/
+    .contact-info-list{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
     .contact-info{
         border-bottom-width: 2px;
     }
@@ -380,10 +388,6 @@ footer{
 @media only screen and (min-width:1061px){
     html{
         font-size: 21px;
-    }
-    .page{
-        width: 1060px;
-        margin: 0 auto;
     }
     h2{
         border-left-width: 2px;
