@@ -44,11 +44,11 @@ h2{
     background: var(--lightgray);
 }
 ::-webkit-scrollbar-thumb{
-    background:#39697d;
+    background:var(--darkblue);
     border-radius: 1rem;
 }
 ::-webkit-scrollbar-thumb:hover{
-    background:var(--darkblue);
+    background:#11252e;
 }
 /*scroll bar end*/
 /*header + navbar*/
