@@ -65,6 +65,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
+    box-shadow: 0 20px 30px rgba(0,0,0,0.2);
 }
 
 .logo{
@@ -193,6 +194,8 @@ header{
     display: block;
     width:100%;
     border-radius: 2%;
+    box-shadow: 20px 0 30px rgba(0,0,0,0.1), -20px 0 30px rgba(0,0,0,0.1),
+                0 20px 30px rgba(0,0,0,0.1), 0 -20px 30px rgba(0,0,0,0.1);
 }
 
 .project-title{
@@ -271,6 +274,7 @@ footer{
     align-items:center;
     font-size:1.2rem;
     color:var(--lightgray);
+    box-shadow: 0 -20px 30px rgba(0,0,0,0.3);
 }
 
 .logo-footer{
