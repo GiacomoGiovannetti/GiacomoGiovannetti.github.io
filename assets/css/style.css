@@ -36,6 +36,13 @@ h2{
     margin: 1.5rem;
     color:var(--darkblue);
 }
+/*.bg{
+    background-image: url(../img/bg-footer.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:100%;
+}*/
 /*scroll bar*/
 ::-webkit-scrollbar{
     width: 7px;
@@ -88,12 +95,28 @@ header{
 }
 
 .nav-link{
+    position: relative; 
     color: var(--darkblue);
     font-weight: 700;
 }
+.nav-link:after{
+    content:'';
+    position: absolute; 
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:var(--darkblue);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
 
-.nav-link:hover{
-    color:#11252e;
+
+}
+
+.nav-link:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 /*header + navbar end*/
 /*homepage*/
@@ -139,12 +162,12 @@ header{
     font-size: 1.5rem;
     border-radius: 50px;
     margin: 2rem 0 0;
-    transition: background 500ms ease;
+    transition: background 0.5s ease;
 }
 
 .btn:hover{
     background: var(--darkblue);
-    color:var(--lightgray);
+    color: var(--lightgray);
 }
 /*home page end*/
 /*Portfolio*/
