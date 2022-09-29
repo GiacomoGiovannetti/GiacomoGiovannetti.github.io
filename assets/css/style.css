@@ -48,7 +48,7 @@ h2{
     width: 7px;
 }
 ::-webkit-scrollbar-track{
-    background: var(--lightgray);
+    background: var(--lightblue);
 }
 ::-webkit-scrollbar-thumb{
     background:var(--darkblue);
