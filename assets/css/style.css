@@ -36,13 +36,6 @@ h2{
     margin: 1.5rem;
     color:var(--darkblue);
 }
-/*.bg{
-    background-image: url(../img/bg-footer.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height:100%;
-}*/
 /*scroll bar*/
 ::-webkit-scrollbar{
     width: 7px;
@@ -60,6 +53,7 @@ h2{
 /*scroll bar end*/
 /*header + navbar*/
 header{
+    top: 0;
     position:fixed;
     width: 100%;
     z-index: 1;
@@ -114,8 +108,6 @@ header{
     background-color:var(--darkblue);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
-
-
 }
 
 .nav-link:hover:after{
@@ -164,6 +156,7 @@ header{
     border: 2px solid #39697d;
     padding: 0.5rem;
     font-size: 1.5rem;
+    font-weight: 600;
     border-radius: 50px;
     margin: 2rem 0 0;
     transition: background-color 0.7s ease;
@@ -179,6 +172,10 @@ header{
     height: auto;
     text-align:center;
     color: var(--lightgray);
+}
+
+.portfolio h2{
+    margin-top: 4.5rem;
 }
 
 .portfolio-element{
@@ -235,6 +232,10 @@ header{
     margin-bottom: 1rem;
 }
 
+.bio h2{
+    margin-top: 4.5rem;
+}
+
 .about-me{
     text-align: left;
     font-size: 1.2rem;
@@ -253,7 +254,7 @@ header{
 /*about me end*/
 /*contact-me*/
 .contact-me-container{
-    height:60vh;
+    height:65vh;
     text-align: center;
 }
 .input-container{
@@ -264,16 +265,21 @@ header{
     margin-left: 0.5rem;
     color: var(--darkblue)
 }
-#name{
+#name, #email, #message{
     margin-bottom: 0.5rem;
-    width: 15rem;
+    width: 17rem;
     background-color: var(--lightblue);
     border: none;
     border-bottom: 1px solid var(--darkblue); 
     outline: none;
-    font-size:1rem;
+    color: var(--darkblue);
+    font-family: 'rokkitt', serif;
     padding: 0.3rem 0.2rem;
     transition: border-color 0.35s ease-out;
+}
+#name{
+    font-size:1.2rem;
+    padding: 0.3rem 0.2rem;
 }
 
 #name:focus{
@@ -281,15 +287,8 @@ header{
 }
 
 #email{
-    margin-bottom: 0.5rem;
-    width: 15rem;
-    background-color: var(--lightblue);
-    border: none;
-    border-bottom: 1px solid var(--darkblue);
-    outline: none;
-    font-size:1rem;
+    font-size:1.2rem;
     padding: 0.3rem 0.2rem;
-    transition: border-color 0.35s ease-out;
 }
 
 #email:focus{
@@ -297,17 +296,9 @@ header{
 }
 
 #message{
-    margin-bottom: 0.5rem;
-    width: 15rem;
-    height: 5rem;
-    background-color: var(--lightblue);
-    color: var(--darkblue);
-    border:none;
-    border-bottom: 1px solid var(--darkblue);
-    outline: none;
+    height: 6rem;
     font-size:1rem;
     padding: 0.3rem 0.2rem;
-    transition: border-color 0.35s ease-out;
 }
 
 #message:focus{
@@ -315,11 +306,15 @@ header{
 }
  button{
     padding: 0.5rem;
+    margin-top: 0.5rem;
+    margin-left: 3.5rem;
     background-color: var(--lightblue);
-    color: var(--darkblue);
     border: 2px solid #39697d;
     border-radius: 50px;
-    font-size: 1rem;
+    color: var(--darkblue);
+    font-family: 'rokkitt', serif;
+    font-size:1.2rem;
+    font-weight:600;
     transition: background-color 0.7s ease-out;
 }
 
@@ -329,23 +324,6 @@ button:hover{
 }
 
 /*contact-me end*/
-/*contact info*/
-.contact-info-container{
-    height:50vh;
-    text-align: center;
-}
-
-.contact-info{
-    display:inline-block;
-    font-size: 1.2rem;
-    margin:0.5rem;
-    border-bottom: 1px solid var(--darkblue);
-}
-
-.contact-info-list-container{
-    text-align:left;
-}
-/*contact info end*/
 /*footer*/
 footer{
     background-color: #11252e;
@@ -457,8 +435,13 @@ footer{
     font-size: 32px;
     transition: font-size 0.25s ease-out;
   }
-  /*icons end*/
 
+  .fa-bars::before{
+    font-size: 25px;
+  }
+  /*icons end*/
+/*mobile styles*/   
+/*mobile styles end*/
 /*tablet styles*/
 @media only screen and (min-width:500px) and (max-width: 1060px){
     html{
@@ -511,19 +494,12 @@ footer{
     /*about me*/
     /*about me end*/
     /*contact-me*/
-    
+    #name, #email, #message{
+        width: 20rem;
+        border-bottom-width: 2px;;
+    }
 
     /*contact-me end*/
-    /*contact-info*/
-    .contact-info-list{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .contact-info{
-        border-bottom-width: 2px;
-    }
-    /*contact-info end*/
     /*footer*/
     .logo-footer{
         width: 75px;
@@ -583,16 +559,12 @@ footer{
     /*portfolio end*/
     /*about me*/
     /*about me end*/
-    /*contact-info*/
-    .contact-info-list{
-        display:flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .contact-info{
+    /*contact-me*/
+    #name, #email, #message{
+        width: 20rem;
         border-bottom-width: 2px;
     }
-    /*contact-info end*/
+    /*contact-me end*/
     /*footer*/
     /*footer end*/
     /*icons*/
