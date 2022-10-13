@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Giovannetti Giacomo</title>
         <meta name="description" content="Hi I'm Giacomo Giovannetti, I'm a Full stack Web Developer student at Start2Impact. That's my personal website!"/>
         <meta property="og:title" content="Giacomo Giovannetti"/>
@@ -11,19 +11,29 @@
         <meta property="og:image:type" content="image/svg"/>
         <meta property="og:url" content="https://giacomogiovannetti.github.io/"/>
         <meta property="og:description" content="Hi I'm Giacomo Giovannetti, I'm a Full stack Web Developer student at Start2Impact. That's my personal website!"/>
-        
         <link rel="icon" type="image/x-icon" href="./../assets/img/logo-g-favicon.svg">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script type="text/javascript">
+            function toggle(){
+                var x = document.getElementById("links");
+                if(x.className=== "links"){
+                    x.className += "responsive";
+                } else{
+                    x.className="links";
+                }
+            }
+        </script>
     </head>
     <body>
         <div class="page">
         <!-- Nav menu-->
         <header id="header">
             <img src="./assets/img/logo-g.svg" class="logo" alt="logo" srcset="./assets/img/logo-g-retina.svg 1000w, ./assets/img/logo-g.svg 500w" sizes="(min-width:1060px) 1060px, 100vw">
-            <nav> 
-                <div class="links">                
-                    <ul class="menu">    
+            <nav>
+                <a href="javascrpit:void(0);" class="icon" Onclick="toggle()"><i class="fa fa-bars"></i></a>
+                <div class="links" id="links">                
+                    <ul class="menu active">    
                          <li class="menu-el"><a href="#portfolio" class="nav-link">Portfolio</a></li>
                          <li class="menu-el"><a href="#about-me" class="nav-link">About Me</a></li>
                     </ul>
@@ -134,7 +144,8 @@
                         <div class="input-container">
                             <label for="name">Name</label><input id="name" type="text" name="name" >
                             <label for="email">E-mail</label><input id="email" type="email" name="email" >
-                            <label for="message">Message</label><textarea id="message" name="Message"></textarea>                            <button>Send Message</button>
+                            <label for="message">Message</label><textarea id="message" name="Message"></textarea>
+                            <button class="form-btn">Send Message</button>
                         </div>
                         </form>
                     </div>
