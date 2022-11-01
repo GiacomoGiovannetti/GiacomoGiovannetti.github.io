@@ -1,0 +1,143 @@
+@media only screen and (min-width: 1061px){
+    html{
+        font-size: 21px;
+    }
+
+    h2{
+        border-left-width: 2px;
+        border-right-width: 2px;
+    }
+
+    //header + navbar
+    header{
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem;
+        box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+
+        .links{
+            display: block;
+        }
+
+        .menu, .menu-el{
+            position: static; 
+            background-color: $lightblue;
+            display: inline-block;
+            padding: 0px 10px; 
+            box-shadow: none; 
+            opacity: 1;
+
+            a{
+                position: relative; 
+                color: $secondary-color;
+                font-weight: 700;
+    
+                &:after{
+                    content: '';
+                    position: absolute; 
+                    width: 100%;
+                    transform: scaleX(0);
+                    height: 2px; 
+                    bottom: 0; 
+                    left: 0; 
+                    background-color: $secondary-color;
+                    transform-origin: bottom right;
+                    transition: transform 0.25s ease-out;
+                }
+    
+                &:hover:after{
+                    transform: scaleX(1);
+                    transform-origin: bottom left;
+                }
+            }
+        }
+
+        .icon{
+            display: none;
+        }
+    }
+    //header + navbar end
+    //homepage
+    .btn-landing{
+        border-width: 3px; 
+    }
+    //homepage end
+    //portfolio
+    .portfolio{
+
+        ul{
+            display: flex; 
+            flex-wrap:wrap;
+            justify-content: center; 
+        }
+
+        li{
+            display: flex; 
+            width: 33%;
+
+            .projects{
+
+                h3{
+                    bottom: 2.3rem;
+                    right: 0.4rem;
+                }
+            }
+        }
+
+        .btn-portfolio{
+            border-width: 2px; 
+            font-size: 0.7rem;
+            padding: 0.3rem;
+            bottom: 3.4rem;
+            left: 0.4rem;
+        }
+    }
+    //portoflio end
+    //contact-me
+    .contact-me-container{
+
+        .input-container{
+
+            #name, #email, #message{
+                width: 20rem;
+                border-bottom-width:2px;
+            }
+    
+        }
+    }
+
+    .btn-form{
+        margin-left: 5.5rem;
+    }
+    //footer
+    footer{
+
+        .socialfooter:after{
+            content:'';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0; 
+            left: 0; 
+            background-color: $lightgray;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        .socialfooter:hover:after{
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    }
+    //footer end
+    //icons
+    .fa{
+        font-size: 39px; 
+        width: 65px;
+        padding: 26px;
+        margin: 5px 2px; 
+    }
+    //icons end
+}

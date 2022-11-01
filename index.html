@@ -14,39 +14,29 @@
         <link rel="icon" type="image/x-icon" href="./../assets/img/logo-g-favicon.svg">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script type="text/javascript">
-            function toggle(){
-                var x = document.getElementById("links");
-                if(x.className=== "links"){
-                    x.className += "responsive";
-                } else{
-                    x.className="links";
-                }
-            }
-        </script>
+        <script src="assets/js/scripts.js"></script>
     </head>
     <body>
-        <div class="page">
         <!-- Nav menu-->
         <header id="header">
-            <img src="./assets/img/logo-g.svg" class="logo" alt="logo" srcset="./assets/img/logo-g-retina.svg 1000w, ./assets/img/logo-g.svg 500w" sizes="(min-width:1060px) 1060px, 100vw">
+            <img src="./assets/img/logo-g.svg" alt="logo" srcset="./assets/img/logo-g-retina.svg 1000w, ./assets/img/logo-g.svg 500w" sizes="(min-width:1060px) 1060px, 100vw">
             <nav>
                 <a href="javascrpit:void(0);" class="icon" Onclick="toggle()"><i class="fa fa-bars"></i></a>
                 <div class="links" id="links">                
-                    <ul class="menu active">    
-                         <li class="menu-el"><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                         <li class="menu-el"><a href="#about-me" class="nav-link">About Me</a></li>
+                    <ul class="menu">    
+                         <li class="menu-el"><a href="#portfolio">Portfolio</a></li>
+                         <li class="menu-el"><a href="#about-me">About Me</a></li>
                     </ul>
                 </div>
             </nav>
         </header>
         <!--Homepage-->
         <section id="homepage">
-            <div class="homepage">
+            <div class="homepage-container"> 
                 <div class="landing-text">                
                     <h1>Giacomo Giovannetti</h1>
-                    <p class="p-landing">Full-stack Web developer</p>
-                    <a href="#contact-me" class="btn">Contact Me</a>
+                    <p>Full-stack Web developer</p>
+                    <a href="#contact-me" class="btn-landing">Contact Me</a>
                 </div>
                 <!--Social sidebar-->
                 <div class="sidebar">
@@ -61,56 +51,56 @@
         <section id="portfolio">
             <div class="portfolio">
                 <h2>Portfolio</h2>
-            <ul class="portfolio-list">
-                <li class="portfolio-element">
+            <ul>
+                <li>
                     <div class="projects">
-                        <img src="./assets/img/coming-soon.jpg" class="portfolio-image" alt="coming-soon" srcset="./assets/img/coming-soon-retina.jpg 2048w, ./assets/img/coming-soon.jpg 1024w" sizes="(min-width: 1060px) 1060px, 100vw"></img>
-                        <div class="project-title">
+                        <img src="./assets/img/coming-soon.jpg" alt="coming-soon" srcset="./assets/img/coming-soon-retina.jpg 2048w, ./assets/img/coming-soon.jpg 1024w" sizes="(min-width: 1060px) 1060px, 100vw"></img>
+                        <div>
                             <h3>Coming Soon</h3>
                         </div>
                         <a href="" target="_blank" class="btn-portfolio">View work</a>
                     </div>
                 </li>
-                <li class="portfolio-element">
+                <li>
                     <div class="projects">
-                        <img src="./assets/img/coming-soon.jpg" class="portfolio-image" alt="coming-soon" srcset="./assets/img/coming-soon-retina.jpg 2048w, ./assets/img/coming-soon.jpg 1024w" sizes="(min-width: 1060px) 1060px, 100vw"></img>
-                        <div class="project-title">
+                        <img src="./assets/img/coming-soon.jpg" alt="coming-soon" srcset="./assets/img/coming-soon-retina.jpg 2048w, ./assets/img/coming-soon.jpg 1024w" sizes="(min-width: 1060px) 1060px, 100vw"></img>
+                        <div>
                             <h3>Coming Soon</h3>
                         </div>
                         <a href="" target="_blank" class="btn-portfolio">View work</a>
                     </div>
                 </li>
-                <li class="portfolio-element">
+                <li>
                     <div class="projects">
-                        <img src="./assets/img/coming-soon.jpg" class="portfolio-image" alt="coming-soon" srcset="./assets/img/coming-soon-retina.jpg 2048w, ./assets/img/coming-soon.jpg 1024w" sizes="(min-width: 1060px) 1060px, 100vw"></img>
-                        <div class="project-title">
+                        <img src="./assets/img/coming-soon.jpg" alt="coming-soon" srcset="./assets/img/coming-soon-retina.jpg 2048w, ./assets/img/coming-soon.jpg 1024w" sizes="(min-width: 1060px) 1060px, 100vw"></img>
+                        <div>
                             <h3>Coming Soon</h3>
                         </div>
                         <a href="" target="_blank" class="btn-portfolio">View work</a>
                     </div>
                 </li>
-                <li class="portfolio-element">
+                <li>
                     <div class="projects">
-                        <img src="./assets/img/coming-soon.jpg" class="portfolio-image" alt="coming-soon" srcset="./assets/img/coming-soon-retina.jpg 2048w, ./assets/img/coming-soon.jpg 1024w" sizes="(min-width: 1060px) 1060px, 100vw"></img>
-                        <div class="project-title">
+                        <img src="./assets/img/coming-soon.jpg" alt="coming-soon" srcset="./assets/img/coming-soon-retina.jpg 2048w, ./assets/img/coming-soon.jpg 1024w" sizes="(min-width: 1060px) 1060px, 100vw"></img>
+                        <div>
                             <h3>Coming Soon</h3>
                         </div>
                         <a href="" target="_blank" class="btn-portfolio">View work</a>
                     </div>
                 </li>
-                <li class="portfolio-element">
+                <li>
                     <div class="projects">
-                        <img src="./assets/img/coming-soon.jpg" class="portfolio-image" alt="coming-soon" srcset="./assets/img/coming-soon-retina.jpg 2048w, ./assets/img/coming-soon.jpg 1024w" sizes="(min-width: 1060px) 1060px, 100vw"></img>
-                        <div class="project-title">
+                        <img src="./assets/img/coming-soon.jpg" alt="coming-soon" srcset="./assets/img/coming-soon-retina.jpg 2048w, ./assets/img/coming-soon.jpg 1024w" sizes="(min-width: 1060px) 1060px, 100vw"></img>
+                        <div>
                             <h3>Coming Soon</h3>
                         </div>
                         <a href="" target="_blank" class="btn-portfolio">View work</a>
                     </div>
                 </li>
-                <li class="portfolio-element">
+                <li>
                     <div class="projects">
-                        <img src="./assets/img/coming-soon.jpg" class="portfolio-image" alt="coming-soon" srcset="./assets/img/coming-soon-retina.jpg 2048w, ./assets/img/coming-soon.jpg 1024w" sizes="(min-width: 1060px) 1060px, 100vw"></img>
-                        <div class="project-title">
+                        <img src="./assets/img/coming-soon.jpg" alt="coming-soon" srcset="./assets/img/coming-soon-retina.jpg 2048w, ./assets/img/coming-soon.jpg 1024w" sizes="(min-width: 1060px) 1060px, 100vw"></img>
+                        <div >
                             <h3>Coming Soon</h3>
                         </div>
                         <a href="" target="_blank" class="btn-portfolio">View work</a>
@@ -139,13 +129,13 @@
             <section id="contact-me">
                 <div class="contact-me-container">
                     <h2>Contact Me</h2>
-                    <div class="form-container">
+                    <div>
                         <form action="https://formsubmit.co/giovannettii.giacomo@gmail.com" method="POST">
                         <div class="input-container">
                             <label for="name">Name</label><input id="name" type="text" name="name" >
                             <label for="email">E-mail</label><input id="email" type="email" name="email" >
                             <label for="message">Message</label><textarea id="message" name="Message"></textarea>
-                            <button class="form-btn">Send Message</button>
+                            <button class="btn-form">Send Message</button>
                         </div>
                         </form>
                     </div>
@@ -154,7 +144,7 @@
             <!--Contact Info-->
             <!--footer-->
             <footer>    
-                <img src="./assets/img/logo-g.svg" class="logo-footer" alt="logo" srcset="./assets/img/logo-g-retina.svg 1000w, ./assets/img/logo-g.svg 500w" sizes="(min-width:1060px) 1060px, 100vw">
+                <img src="./assets/img/logo-g.svg" alt="logo" srcset="./assets/img/logo-g-retina.svg 1000w, ./assets/img/logo-g.svg 500w" sizes="(min-width:1060px) 1060px, 100vw">
                 <div >
                     <a href="https://www.instagram.com/giacomo_giovannetti/" target="_blank" class="socialfooter">Instagram</a>
                     <a href="https://www.linkedin.com/in/giacomogiovannetti/" target="_blank" class="socialfooter">Linkedin</a>
@@ -165,6 +155,5 @@
                 </div>
                 <a href="#homepage" class="fa fa-arrow-circle-up"></a>
             </footer>       
-        </div>        
     </body>
 </html>

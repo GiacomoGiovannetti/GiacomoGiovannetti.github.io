@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt&display=swap');
+@import "config";
+
+*{
+    box-sizing: border-box;
+    padding: 0; 
+    margin: 0;
+}
+
+body{
+    background-color: $primary-color;
+    color: $secondary-color;
+    height: auto;
+    font-family: $font-stack;
+}
+
+h2{
+    font-size: 2rem;
+    border-left: solid 1px $secondary-color;
+    border-right: solid 1px $secondary-color;
+    display: inline-block;
+    padding: 0.5rem;
+    margin: 1.5rem;
+    color: $secondary-color;
+}
+
+a{
+    font-family: $font-stack;
+    text-decoration: none;
+}
+
+//scrollbar
+::-webkit-scrollbar{
+    width: 7px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: $primary-color;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: $secondary-color;
+    border-radius: 1rem;
+
+    &:hover{
+        background: $darkblue;
+    }
+}
+
+//scrollbar end
+//header + navbar
+
+header{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100vw;
+    height: auto;
+    background-color: $lightblue;
+    display: flex;
+    justify-content: flex-end;
+    box-shadow: 0 20px 30px $shadow;
+    padding: 0.5rem;
+
+    img{
+        margin-right: auto;
+        width: 50px;
+        border-radius: 2px;
+    }
+
+    .icon{
+        position: relative; 
+        font-size: 1.3rem;
+    }
+
+    .links{
+        display:none; 
+    }
+
+    .menu{
+        position: absolute;
+        left: 0rem;
+        top: 4.2rem;
+        box-shadow: 0 0 10px $shadow;
+        background-color: $darkblue;
+        width: 100%;
+        padding:0.5rem;
+        list-style: none;
+        font: {
+            size: 1.3rem;
+            family: $font-stack;
+            weight: 500;
+        }
+        text-align: center; 
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        opacity: 0.9;
+
+        a{
+            color: $lightgray;
+        }
+    }
+
+    .links.responsive{
+        display: block;
+    }
+}
+//header + navbar end
+//homepage
+
+.homepage-container{
+    width:100%;
+    height: 100vh;
+    display: flex; 
+    justify-content: space-between;
+
+    .landing-text{
+        width: 95vw;
+        height:100vh;
+        display: flex; 
+        flex-direction: column;
+        justify-content: center; 
+        align-items: flex-start;
+        text-align: left;
+        font-family: $font-stack;
+        font-size: 2.5rem;
+        padding-left: 1rem; 
+
+        p{
+            font-size:1.7rem;
+            font-weight: 600;
+        }
+    }
+
+    .sidebar{
+        width: 5vw;
+        display: flex; 
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        font-size: 1.5rem;
+        padding-right: 0.5rem;
+    }
+}
+//homepage end
+//portfolio
+
+.portfolio{
+    height: auto;
+    text-align: center; 
+    color: $lightgray;
+
+    h2{
+        margin-top: 4.5rem;
+    }
+
+    li{
+        display: flex;
+        justify-content: center;
+
+        .projects{
+            width: 90%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; 
+
+            img{
+                display: block; 
+                width: 100%;
+                border-radius: 2%;
+                box-shadow: 20px 0 30px $shadow-image, -20px 0 30px $shadow-image,
+                            0 20px 30px $shadow-image, 0 -20px 30px $shadow-image;
+            }
+
+            h3{
+                position: relative;
+                bottom: 3rem; 
+                right: 0.8rem;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+//portfolio end
+//about me
+.bio{
+    height: auto; 
+    text-align: center; 
+    margin-bottom: 1rem;
+    
+    h2{
+        margin-top: 4.5rem;
+    }
+
+    a{
+        color: $secondary-color;
+        text-decoration: underline;
+    }
+
+    .about-me{
+        text-align: left;
+        font-size: 1.2rem;
+        margin: 0.5rem;
+    }
+
+    .skill{
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+//about-me end
+//contact-me
+.contact-me-container{
+    height: 65vh;
+    text-align: center;
+
+    .input-container{
+        display:flex; 
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 1.2rem;
+        margin-left: 0.5rem;
+        color: $secondary-color;
+
+        %input-layout{
+            margin-bottom: 0.5rem;
+            width: 17rem; 
+            background-color: $primary-color;
+            border: none;
+            border-bottom: 1px solid $secondary-color;
+            outline: none;
+            color: $secondary-color;
+            font-family: $font-stack;
+            padding: 0.3rem 0.2rem;
+            transition: border-color 0.35s ease-out;
+        }
+
+        #name{
+            @extend %input-layout;
+            font-size: 1.2rem;
+            
+            &:focus{
+                border-color: $lightgray;
+            }
+        }
+
+        #email{
+            @extend %input-layout;
+            font-size: 1.2rem;
+
+            &:focus{
+                border-color: $lightgray;
+            }
+        }
+
+        #message{
+            @extend %input-layout;
+            height: 6rem;
+            font-size: 1rem;
+
+            &:focus{
+                border-color: $lightgray;
+            }
+        }
+    }
+}
+//contact-me end
+//footer
+footer{
+    background-color: $darkblue;
+    height: 27vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    color: $lightgray;
+    box-shadow: 0 -20px 30px rgba(0,0,0,0.3);
+
+    img{
+        display: flex; 
+        width: 50px; 
+        align-items: center;
+        margin: 0.5rem;
+        border-radius: 2%;
+    }
+
+    a{
+        position: relative; 
+        color: $lightgray;
+        margin: 0.8rem;
+    }
+}
+//footer end
+@import "utilities";
+
+@import "tablet";
+@import "desktop";
+
