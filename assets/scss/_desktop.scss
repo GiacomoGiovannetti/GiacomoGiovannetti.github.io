@@ -68,7 +68,7 @@
 
         ul{
             display: flex; 
-            flex-wrap:wrap;
+            flex-wrap: wrap;
             justify-content: center; 
         }
 
@@ -94,6 +94,18 @@
         }
     }
     //portoflio end
+
+    //about-me
+    .bio{
+        .skill{
+            i{
+                font-size: 3rem;
+                margin: 0 15px;
+            }
+        }
+    }
+    //about-me end
+
     //contact-me
     .contact-me-container{
 
@@ -133,7 +145,7 @@
     }
     //footer end
     //icons
-    .fa{
+    .fab , .far{
         font-size: 39px; 
         width: 65px;
         padding: 26px;

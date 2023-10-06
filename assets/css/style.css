@@ -127,7 +127,7 @@ header .links.responsive {
 .portfolio {
   height: auto;
   text-align: center;
-  color: #c2c2c4;
+  color: #1c292e;
 }
 .portfolio h2 {
   margin-top: 4.5rem;
@@ -145,6 +145,7 @@ header .links.responsive {
 .portfolio li .projects img {
   display: block;
   width: 100%;
+  height: 75%;
   border-radius: 2%;
   box-shadow: 20px 0 30px rgba(0, 0, 0, 0.1), -20px 0 30px rgba(0, 0, 0, 0.1), 0 20px 30px rgba(0, 0, 0, 0.1), 0 -20px 30px rgba(0, 0, 0, 0.1);
 }
@@ -177,6 +178,13 @@ header .links.responsive {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.bio .skill i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  margin: 0px 8px;
 }
 
 .contact-me-container {
@@ -270,7 +278,7 @@ html {
 
 .btn-portfolio {
   border: 2px solid #1c292e;
-  color: #c2c2c4;
+  color: #1c292e;
   font-size: 1.1rem;
   margin: 1.3rem 0 1.5rem;
   position: relative;
@@ -279,6 +287,7 @@ html {
 }
 .btn-portfolio:hover {
   background-color: #11252e;
+  color: #c2c2c4;
 }
 
 .btn-form {
@@ -295,7 +304,7 @@ html {
   color: #c2c2c4;
 }
 
-.fa {
+.fab, .far {
   padding: 20px;
   font-size: 30px;
   width: 50px;
@@ -309,20 +318,12 @@ html {
   color: #1c292e;
 }
 
-.fa-arrow-circle-up:hover, .fa-twitter:hover, .fa-github:hover, .fa-linkedin:hover, .fa-instagram:hover {
+.fa-arrow-alt-circle-up:hover, .fa-twitter:hover, .fa-github:hover, .fa-linkedin:hover, .fa-instagram:hover {
   transform: scale(1.2);
   transition: transform 0.25s ease-out;
 }
 
-.fa-html5 {
-  color: #1c292e;
-}
-
-.fa-css3 {
-  color: #1c292e;
-}
-
-.fa-arrow-circle-up {
+.fa-arrow-alt-circle-up {
   color: #c2c2c4;
 }
 .fa-bars {
@@ -386,7 +387,7 @@ html {
   footer img {
     width: 75px;
   }
-  .fa {
+  .fab, .far {
     font-size: 45px;
     width: 75px;
   }
@@ -464,6 +465,10 @@ html {
     bottom: 3.4rem;
     left: 0.4rem;
   }
+  .bio .skill i {
+    font-size: 3rem;
+    margin: 0 15px;
+  }
   .contact-me-container .input-container #name, .contact-me-container .input-container #email, .contact-me-container .input-container #message {
     width: 20rem;
     border-bottom-width: 2px;
@@ -487,7 +492,7 @@ html {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
-  .fa {
+  .fab, .far {
     font-size: 39px;
     width: 65px;
     padding: 26px;

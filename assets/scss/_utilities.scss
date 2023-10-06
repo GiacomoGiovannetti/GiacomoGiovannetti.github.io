@@ -26,7 +26,7 @@ html{
 
 .btn-portfolio{
     border: 2px solid $secondary-color;
-    color: $lightgray;
+    color: $secondary-color;
     font-size: 1.1rem; 
     margin: 1.3rem 0 1.5rem;
     position: relative; 
@@ -36,6 +36,7 @@ html{
 
     &:hover{
         background-color: $darkblue;
+        color: $lightgray;
     }
 }
 
@@ -59,7 +60,7 @@ html{
 }
 
 //icons 
-.fa{
+.fab, .far{
     padding: 20px; 
     font-size: 30px; 
     width: 50px;
@@ -109,15 +110,7 @@ html{
     }
 }
 
-.fa-html5{
-    color: $secondary-color;
-}
-
-.fa-css3{
-    color: $secondary-color;
-}
-
-.fa-arrow-circle-up{
+.fa-arrow-alt-circle-up{
     color: $lightgray;
 
     &:hover{
